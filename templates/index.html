@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinubuCoin</title>
+    <!-- <link rel="stylesheet" href="web_app/static/styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="profile">
+                <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+                <span class="username">Ak (CEO)</span>
+            </div>
+            <div class="stats">
+                <span class="profit">Shege Per Hour: +7.39</span>
+                <img src="binance-logo.png" alt="Binance Icon" class="icon">
+            </div>
+        </header>
+
+        <!-- Interactive Circle -->
+        <div class="game-container">
+            <div class="balance"></div>
+                <span id="coinBalance">Coin Balance: 59.49</span>
+            </div>
+            <div class="tap-circle" id="tapCircle">
+                <img src="static/tinubu.png" alt="Tinubu Character" class="character">
+                <div class="tap-count" id="tapCount">+1</div>
+            </div>
+        </div>
+
+        <!-- Bottom Menu -->
+        <footer>
+            <button class="menu-btn">Exchange</button>
+            <button class="menu-btn">Playground</button>
+            <button class="menu-btn">AirDrop</button>
+            <button class="menu-btn">Friends</button>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="web_app/static/script.js"></script>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+
+</body>
+</html>
